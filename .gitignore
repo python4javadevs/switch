@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IntelliJ metadata
+.idea
+
+# Ignore MacOS mystery files
+.DS_Store
