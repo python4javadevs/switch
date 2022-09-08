@@ -1,3 +1,19 @@
+/*
+ * Copyright 2022 J Steven Perry
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.python4javadevs.learn.switchdemo;
 
 import java.util.Optional;
@@ -6,6 +22,9 @@ import static com.python4javadevs.learn.switchdemo.Constants.HOLY_GRAIL_TITLE;
 import static com.python4javadevs.learn.switchdemo.Constants.LIFE_OF_BRIAN_TITLE;
 import static com.python4javadevs.learn.switchdemo.Constants.MEANING_OF_LIFE_TITLE;
 
+/**
+ * Demonstrates a few ways to use the Java switch statement
+ */
 public class SwitchDemo {
 
     /**
