@@ -34,14 +34,16 @@ Structure of the repo
 
 * `switch-java` - A maven project containing the Java language implementation of the switch concept using the Java `switch` statement, from both the fall-through syntax from JDK 8 and before, the arrow (no fall through) syntax introduced in JDK 13 and the pattern matching syntax introduced in JDK 17.
 
-* `switch-python` - The Python implementation of the switch concept, using various methods, including the new `match/case` structural pattern matching introduced in Python 3.10. Uses `venv` to isolate code in the repo from whatever Python 3 environment you have installed (the solution requires Python 3.10, but if you don't have that installed, don't worry, I got you).
+* `switch-python` - The Python implementation of the switch concept, using various methods, including the new `match/case` structural pattern matching introduced in Python 3.10. 
 
     * The `switch_demo.py` module is the one where you add your code if you want to follow along with the video
-    or complete on your own as an exercise.
+    or complete on your own as an exercise (requires Python 3.10 or higher).
 
 
 Notes
 ----
+
+* You'll need Python 3.10 or higher on your computer if you want to run all of the Python examples in this video.
 
 * Use the code in the `tests` package (in the `test_switch_demo.py` module) for the specifications for how the code should work. If you are a fan of TDD (like I am)
 then you can use 
