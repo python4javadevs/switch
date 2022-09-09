@@ -35,6 +35,7 @@ def compute_release_year_if(movie):
     :return: As described above
     """
     # TODO: Use if/elif/else to implement the behavior
+    return 'I will not buy this record, it is scratched'
 
 
 def compute_release_year_dictionary(movie):
@@ -50,7 +51,7 @@ def compute_release_year_dictionary(movie):
     }
 
     # TODO: Return a lookup of the movie from the dictionary
-    pass
+    return 'My dog has no nose'
 
 
 def compute_release_year_pattern(movie):
@@ -61,7 +62,7 @@ def compute_release_year_pattern(movie):
     :return: As described above
     """
     # TODO: Use match/case to crack the movie and calculate its release year
-    pass
+    return 'I sure did that thing'
 
 
 if __name__ == '__main__':
