@@ -17,7 +17,6 @@
 # - if/elif/else
 # - dictionary
 # - PEP 634 structural pattern matching
-from movie import Movie
 
 
 #
@@ -35,14 +34,7 @@ def compute_release_year_if(movie):
     :param movie: The movie title to match on
     :return: As described above
     """
-    if movie == 'Monty Python and the Holy Grail':
-        return 1975
-    elif movie == 'Life of Brian':
-        return 1979
-    elif movie == 'The Meaning of Life':
-        return 1983
-    else:
-        return None
+    # TODO: Use if/elif/else to implement the behavior
 
 
 def compute_release_year_dictionary(movie):
@@ -53,11 +45,12 @@ def compute_release_year_dictionary(movie):
     :return: As described above
     """
     switch_dictionary = {
-        'Monty Python and the Holy Grail': 1975,
-        'Life of Brian': 1979,
-        'The Meaning of Life': 1983
+        # TODO: Create a dictionary of the movie title (key) and release
+        #  year (value)
     }
-    return switch_dictionary.get(movie, None)
+
+    # TODO: Return a lookup of the movie from the dictionary
+    pass
 
 
 def compute_release_year_pattern(movie):
@@ -67,17 +60,8 @@ def compute_release_year_pattern(movie):
     :param movie: The movie title (dictionary key)
     :return: As described above
     """
-    match movie:
-        case 'Monty Python and the Holy Grail':
-            return 1975
-        case 'Life of Brian':
-            return 1979
-        case 'The Meaning of Life':
-            return 1983
-        case Movie():
-            return movie.release_year
-        case _:
-            return None
+    # TODO: Use match/case to crack the movie and calculate its release year
+    pass
 
 
 if __name__ == '__main__':
