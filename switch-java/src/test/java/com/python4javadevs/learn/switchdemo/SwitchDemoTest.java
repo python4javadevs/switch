@@ -23,12 +23,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 
-import static com.python4javadevs.learn.switchdemo.Constants.HOLY_GRAIL_OBJECT;
-import static com.python4javadevs.learn.switchdemo.Constants.HOLY_GRAIL_TITLE;
-import static com.python4javadevs.learn.switchdemo.Constants.LIFE_OF_BRIAN_OBJECT;
-import static com.python4javadevs.learn.switchdemo.Constants.LIFE_OF_BRIAN_TITLE;
-import static com.python4javadevs.learn.switchdemo.Constants.MEANING_OF_LIFE_OBJECT;
-import static com.python4javadevs.learn.switchdemo.Constants.MEANING_OF_LIFE_TITLE;
+import static com.python4javadevs.learn.switchdemo.SwitchDemo.HOLY_GRAIL_TITLE;
+import static com.python4javadevs.learn.switchdemo.SwitchDemo.LIFE_OF_BRIAN_TITLE;
+import static com.python4javadevs.learn.switchdemo.SwitchDemo.MEANING_OF_LIFE_TITLE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -75,6 +72,7 @@ public class SwitchDemoTest {
             assertTrue(releaseYearOptional.isPresent());
             assertEquals(1983, releaseYearOptional.get());
         }
+
         @Test
         @DisplayName("And movie title is not recognized, Then release year should be empty")
         public void computeReleaseYearFancyUnknown() {
@@ -104,6 +102,7 @@ public class SwitchDemoTest {
             assertEquals(1983, switchDemo.computeReleaseYearArrow(MovieEnum.THE_MEANING_OF_LIFE));
         }
     }
+
     @Nested
     @DisplayName("When testing computeReleaseYearArrow()...")
     public class ComputeReleaseYearFancy {
@@ -164,18 +163,21 @@ public class SwitchDemoTest {
             @Test
             @DisplayName("And movie title is Monty Python and the Holy Grail, Then release year should be 1975")
             public void computeReleaseYearFancyHG() {
+                final Movie HOLY_GRAIL_OBJECT = new Movie().setTitle(HOLY_GRAIL_TITLE).setReleaseYear(1975);
                 assertEquals(1975, switchDemo.computeReleaseYearFancy(HOLY_GRAIL_OBJECT));
             }
 
             @Test
             @DisplayName("And movie title is Life of Brian, Then release year should be 1979")
             public void computeReleaseYearFancyLOB() {
+                final Movie LIFE_OF_BRIAN_OBJECT = new Movie().setTitle(LIFE_OF_BRIAN_TITLE).setReleaseYear(1979);
                 assertEquals(1979, switchDemo.computeReleaseYearFancy(LIFE_OF_BRIAN_OBJECT));
             }
 
             @Test
             @DisplayName("And movie title is The Meaning of Life, Then release year should be 1983")
             public void computeReleaseYearFancyMOL() {
+                final Movie MEANING_OF_LIFE_OBJECT = new Movie().setTitle(MEANING_OF_LIFE_TITLE).setReleaseYear(1983);
                 assertEquals(1983, switchDemo.computeReleaseYearFancy(MEANING_OF_LIFE_OBJECT));
             }
 
