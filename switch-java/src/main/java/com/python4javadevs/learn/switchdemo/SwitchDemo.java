@@ -18,14 +18,14 @@ package com.python4javadevs.learn.switchdemo;
 
 import java.util.Optional;
 
-import static com.python4javadevs.learn.switchdemo.Constants.HOLY_GRAIL_TITLE;
-import static com.python4javadevs.learn.switchdemo.Constants.LIFE_OF_BRIAN_TITLE;
-import static com.python4javadevs.learn.switchdemo.Constants.MEANING_OF_LIFE_TITLE;
-
 /**
  * Demonstrates a few ways to use the Java switch statement
  */
 public class SwitchDemo {
+
+    public static final String HOLY_GRAIL_TITLE = "Monty Python and the Holy Grail";
+    public static final String LIFE_OF_BRIAN_TITLE = "Life of Brian";
+    public static final String MEANING_OF_LIFE_TITLE = "The Meaning of Life";
 
     /**
      * Compute the release year for the specified movie title and return an Optional containing
@@ -74,7 +74,7 @@ public class SwitchDemo {
     /**
      * Compute and return the release year for the specified object using
      * <a href="https://openjdk.org/jeps/406">JEP 406 Pattern Matching for switch preview functionality</a>.
-     * (Pretty fancy IMHO)
+     * Note: this is a feature preview. To use it make sure --feature-preview enabled
      * <p>
      * Throw an exception if the type is not supported,
      * which includes null (arguably fancy as well).
