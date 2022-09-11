@@ -43,7 +43,7 @@ from movie import Movie
 def compute_release_year_if(movie):
     """
     Compute and return the release year if the movie title is recognized
-    or None if not recognized.
+    or None if not recognized
     :param movie: The movie title to match on
     :return: As described above
     """
@@ -60,7 +60,7 @@ def compute_release_year_if(movie):
 def compute_release_year_dictionary(movie):
     """
     Compute and return the release year if the movie title is recognized
-    or None if not recognized.
+    or None if not recognized
     :param movie: The movie title (dictionary key)
     :return: As described above
     """
@@ -75,17 +75,14 @@ def compute_release_year_dictionary(movie):
 def compute_release_year_pattern(movie):
     """
     Compute and return the release year if the movie is recognized
-    or None if not recognized.
+    or None if not recognized
     :param movie: The movie title (dictionary key)
     :return: As described above
     """
+    # Use match/case to crack the movie and calculate its release year
     match movie:
-        case 'Monty Python and the Holy Grail':
-            return 1975
-        case 'Life of Brian':
-            return 1979
-        case 'The Meaning of Life':
-            return 1983
+        case 'Monty Python and the Holy Grail', 'Life of Brian', 'The Meaning of Life':
+            return compute_release_year_dictionary(movie)
         case Movie():
             return movie.release_year
         case _:
