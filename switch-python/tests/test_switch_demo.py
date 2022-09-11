@@ -108,6 +108,7 @@ class UsingPatternMatch(unittest.TestCase):
 
     def test_compute_release_year_unknown_movie_title(self):
         self.assertEqual(None, switch_demo.compute_release_year_pattern('ABCDE'))
+
     def test_compute_release_year_none(self):
         self.assertEqual(None, switch_demo.compute_release_year_pattern(None))
 
