@@ -30,7 +30,7 @@
 def compute_release_year_if(movie):
     """
     Compute and return the release year if the movie title is recognized
-    or None if not recognized.
+    or None if not recognized
     :param movie: The movie title to match on
     :return: As described above
     """
@@ -41,7 +41,7 @@ def compute_release_year_if(movie):
 def compute_release_year_dictionary(movie):
     """
     Compute and return the release year if the movie title is recognized
-    or None if not recognized.
+    or None if not recognized
     :param movie: The movie title (dictionary key)
     :return: As described above
     """
@@ -57,8 +57,8 @@ def compute_release_year_dictionary(movie):
 def compute_release_year_pattern(movie):
     """
     Compute and return the release year if the movie is recognized
-    or None if not recognized.
-    :param movie: The movie title (dictionary key)
+    or None if not recognized
+    :param movie: The movie (either a String title or a Movie object)
     :return: As described above
     """
     # TODO: Use match/case to crack the movie and calculate its release year

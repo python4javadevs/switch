@@ -130,7 +130,7 @@ dmypy.json
 
 # IntelliJ metadata
 .idea
-.iml
+**/*.iml
 
 # Ignore MacOS mystery files
 .DS_Store
