@@ -81,7 +81,7 @@ def compute_release_year_pattern(movie):
     """
     # Use match/case to crack the movie and calculate its release year
     match movie:
-        case 'Monty Python and the Holy Grail', 'Life of Brian', 'The Meaning of Life':
+        case 'Monty Python and the Holy Grail' | 'Life of Brian' | 'The Meaning of Life':
             return compute_release_year_dictionary(movie)
         case Movie():
             return movie.release_year
