@@ -19,13 +19,9 @@ Structure of the repo
     │   ├── __init__.py
     │   └── switch_demo.py
     ├── switch_demo.py
-    ├── tests
-    │   ├── __init__.py
-    │   └── test_switch_demo.py
-    └── venv
-        ├── bin
-        ├── lib
-        └── pyvenv.cfg
+    └── tests
+        ├── __init__.py
+        └── test_switch_demo.py
 ```
 
 * `LICENSE` - Apache 2.0 license file
