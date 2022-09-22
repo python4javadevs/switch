@@ -1,6 +1,6 @@
 # Implement Java switch using Python
 
-This source repo accompanies the YouTube video of the same name.
+This source repo accompanies [the YouTube video of the same name](https://www.youtube.com/watch?v=ZXveIEbd-Cg).
 
 Structure of the repo
 ----
